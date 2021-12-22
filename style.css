@@ -1,0 +1,102 @@
+body,
+html {
+	width: 100%;
+	background: rgb(0,255,250);
+	background: linear-gradient(15deg, rgba(0,255,250,0.1) 0%, rgba(217,255,142,0.2) 37%, rgba(214,255,154,0.3) 57%, rgba(0,184,63,0.3) 91%);
+	font-size: 16px;
+}
+.person {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 32px;
+	color:#000;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;/* добавьте ваш код  */
+}
+.person__info {
+	/* добавьте ваш код  */
+}
+.person__contacts {
+	width: 380px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-weight: 700;/* добавьте ваш код  */
+}
+.person__details {
+	font-weight: 600;
+	text-align: left;/* добавьте ваш код  */
+}
+.avatar {
+	/* добавьте ваш код  */
+}
+.avatar__picture {
+	width: 400px;	
+	border-radius: 50%;
+	border: 35px solid white;
+	margin: 0 32px 32px 0;/* добавьте ваш код  */
+}
+.contacts {
+	/* добавьте ваш код  */
+}
+.contacts__name {
+	font-size: 32px;
+	/* добавьте ваш код  */
+}
+.contacts__role {
+	font-size: 19.2px;
+	/* добавьте ваш код  */
+}
+.contacts__item {
+	padding-top: 32px;
+	/* добавьте ваш код  */
+}
+.contacts__title {
+	font-weight: 700;
+	font-style: italic;
+}
+.contacts__title:after {
+	/* добавьте ваш код  */
+}
+.contacts__link {
+	color: gray;
+	font-style: italic;/* добавьте ваш код  */
+}
+.paragraph {
+	padding-top: 16px;
+	/* добавьте ваш код  */
+}
+.paragraph__last {
+	padding-bottom: 48px;/* добавьте ваш код  */
+}
+
+@media (max-width: 1001px)	{
+	.person {
+		display: flex;
+		flex-direction: column;
+	}
+	.person__details {
+		font-size: 14px;
+		font-weight: 600;
+		padding-top: 24px;
+	}
+	
+	.person__contacts {
+		width: 100%;
+	}
+	.contacts__name {
+		text-align: center;
+		font-size: 64px;
+	}
+	.contacts__role {
+		font-size: 38.4px;
+		text-align: center;
+	}
+	.contacts__item {
+		font-size: 23px;
+	}
+	.avatar__picture {
+		width: 100%;
+	}
+}

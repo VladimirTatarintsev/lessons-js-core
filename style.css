@@ -6,58 +6,57 @@ html {
 	font-size: 16px;
 }
 .person {
-	width: 1500px;
+	width: 900px;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 32px;
+	padding-top: 2rem;
 	color:#000;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .person__info {
-	
+	width: 50%;
 }
 .person__contacts {
-	width: 380px;
+	width: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	font-weight: 700;
-	
+	margin-bottom: 2rem;
 }
 .person__details {
-	font-weight: 600;
+	font-weight: 400;
 	text-align: left;
 }
 .avatar {
-	margin: 0 32px 32px 0;
+	margin: 0 2rem 2rem 0;
 }
 .avatar__picture {
-	width: 400px;
-	position: relative;	
+	width: 100%;
 	border-radius: 50%;
 	border: 32px solid white;
 }
 .contacts {
-	
+	/*Добавьте ваш код*/
 }
 .contacts__name {
-	font-size: 32px;
-	
+	font-size: 2rem;
 }
 .contacts__role {
 	font-size: 19.2px;
-	margin: 0 0 48px 0;
+	margin: 0 0 2rem 0;
 }
 .contacts__item {
-	font-size: 16px;
+	font-size: 1rem;
+	display: inline-block;
 }
 .contacts__title {
 	font-weight: 700;
 	font-style: italic;
 }
 .contacts__title:after {
-	
+	content: ":";
 }
 .contacts__link {
 	color: gray;
@@ -65,19 +64,13 @@ html {
 }
 
 .paragraph {
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 }
 .paragraph__last {
-	margin-bottom: 48px;
+	margin-bottom: 3rem;
 }
 
 /* Медиа запросы*/
-
-@media (max-width: 1600px)	{
-	.person{
-		width: 80%;
-	}
-}
 
 @media (max-width: 1023px)	{
 	.person {
@@ -91,22 +84,27 @@ html {
 	}
 	.contacts__name {
 		text-align: center;
-		font-size: 60px;
+		font-size: 4rem;
 	}
 	.contacts__role {
-		font-size: 38px;
+		font-size: 3rem;
 		text-align: center;
 	}
 	.contacts__item {
-		font-size: 33px;
-		margin-bottom: 24px;
+		font-size: 2.5rem;
+		margin-bottom: 2rem;
 	}
 	.avatar__picture {
-		width: 700px;
+		width: 100%;
 	}
 	.person__details {
-		font-weight: 600;
-		font-size: 12px;
+		font-weight: 400;
+		font-size: 1rem;
+	}
+	.person__info {
+		width: 100%;
+		display: flex;
+		justify-content: center;
 	}
 }
 

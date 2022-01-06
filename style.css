@@ -36,6 +36,15 @@ html {
 	width: 100%;
 	border-radius: 50%;
 	border: 32px solid white;
+	transition-duration: 2s;
+	position: relative;
+}
+.avatar__picture:hover{
+	transform: rotate(180deg);
+	box-shadow: 0 0 40px rgb(19, 51, 196),
+	0 0 80px  rgb(19, 51, 196),
+	0 0 160px rgb(19, 51, 196);
+	border-color: rgb(54, 82, 204);
 }
 .contacts {
 	/*Добавьте ваш код*/
@@ -49,7 +58,7 @@ html {
 }
 .contacts__item {
 	font-size: 1rem;
-	display: inline-block;
+	display: inline;
 }
 .contacts__title {
 	font-weight: 700;
